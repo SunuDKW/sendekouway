@@ -1,0 +1,31 @@
+page-index {
+    @import url('https://fonts.googleapis.com/css?family=Audiowide');
+    .page {
+        background: lightblue;
+    }
+    .titre {
+        margin-top: 50%;
+    }
+    b {
+        font-family: 'Audiowide', cursive;
+        font-size: 2.2em;
+    }
+    .txt_sen {
+        color: white;
+        margin-left: 35%;
+        font-size: 3em;
+        text-shadow: green 3px 3px, green -3px 3px, green -3px -3px, green 3px -3px;
+    }
+    .txt_deukou {
+        color: white;
+        margin-left: 12%;
+        text-shadow: yellow 1px 1px, yellow -2px 2px, yellow -2px -2px, yellow 2px -2px;
+    }
+    .txt_way {
+        color: white;
+        text-shadow: red 3px 3px, red -3px 3px, red -3px -3px, red 3px -3px;
+    }
+    .boutons {
+        margin-top: 100px;
+    }
+}
