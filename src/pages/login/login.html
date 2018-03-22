@@ -23,14 +23,14 @@
         <ion-item>
             <ion-icon name="md-person" item-left primary></ion-icon>
             <ion-label stacked>Email</ion-label>
-            <ion-input type="email"></ion-input>
+            <ion-input type="email" [(ngModel)]="email"></ion-input>
         </ion-item><br>
         <ion-item>
             <ion-icon name="md-key" item-left primary></ion-icon>
             <ion-label stacked>Mot de passe</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
         </ion-item> <br><br>
-        <button ion-button color="light" block large [navPush]="login_page" class="btn_valider">
+        <button ion-button color="light" block large (tap)="valideAction()" class="btn_valider">
             Se Connecter
           </button>
 

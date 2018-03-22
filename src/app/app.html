@@ -1,1 +1,21 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="lemenu">
+    <ion-header>
+        <ion-toolbar>
+        <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-list>
+        <button menuClose ion-item>
+            Paramétres
+        </button>
+        <button menuClose ion-item>
+            Déconnexion
+        </button>
+        </ion-list>
+    </ion-content>
+    
+</ion-menu>
+
+<ion-nav #lemenu swipeBackEnabled="false" [root]="rootPage"></ion-nav>

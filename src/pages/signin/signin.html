@@ -22,24 +22,29 @@
         <ion-item>
             <ion-icon name="md-mic" item-left primary></ion-icon>
             <ion-label stacked>Nom</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" [(ngModel)]="nom" ></ion-input>
         </ion-item><br>
         <ion-item>
             <ion-icon name="md-mic" item-left primary></ion-icon>
-            <ion-label stacked>Email</ion-label>
-            <ion-input type="email"></ion-input>
+            <ion-label stacked>Prénom</ion-label>
+            <ion-input type="text" [(ngModel)]="prenom"></ion-input>
+        </ion-item><br>
+        <ion-item>
+            <ion-icon name="md-mic" item-left primary></ion-icon>
+            <ion-label stacked>E-mail</ion-label>
+            <ion-input type="email" [(ngModel)]="email"></ion-input>
         </ion-item><br>
         <ion-item>
             <ion-icon name="md-mic" item-left primary></ion-icon>
             <ion-label stacked>Mot de passe</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
         </ion-item><br>
         <ion-item>
             <ion-icon name="md-mic" item-left primary></ion-icon>
             <ion-label stacked>Répétez le mot de passe</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="confpassword" ></ion-input>
         </ion-item> <br><br>
-        <button ion-button color="light" block large [navPush]="login_page" class="btn_valider">
+        <button ion-button color="light" block large (tap)="valideAction()" class="btn_valider">
             Valider
           </button>
 

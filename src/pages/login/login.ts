@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the LoginPage page.
@@ -8,14 +8,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+import { HomePage } from '../home/home';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  email: string;
+  password: string;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+  	
+  }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  private valideAction(){
+    //Authentifier
+
+    //redirection dans la page d'accueil
+    this.navCtrl.push(HomePage, {
+      email: this.email
+    });
   }
 
   ionViewDidLoad() {
